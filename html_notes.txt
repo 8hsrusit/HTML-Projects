@@ -1,0 +1,665 @@
+1 - <!--**--> / ---- for Comment
+
+2 - <!DOCTYPE html> / ---- MUST Use at vthe beginning
+
+3 - <img src=""> , <img src="" alt=""> , <img src="aizen.jpg" alt="" 
+width="" height=""> / ---- To Add an img to ur HTML file
+
+4 - <p></p> / ---- Tp and a praghraph
+
+5 - <button></button> / ---- To Add a Button
+
+6 - <h></h> / ---- To make text bog or small from h1-h6
+
+7 - <head></head>
+
+8 - <title></title>
+
+9 - <table></table>
+
+10 - <body></body>
+
+11 - <b></b> / ---- to make the text font bold
+
+12 - <i></i> / .... to make the text font italic
+
+13 - <u></u> / .... to make under-line text
+
+14 - <strong></strong> / .... its like the bold text but its tells the text inside of this TAG is important
+
+15 - <em></em> / .... Its like the italic but its tells the text is more emphasized
+
+  NOTE : 11-15 You can Use it inside Element such as:
+      EX : <h1>I love <b>You</b></h1>
+
+16 - <a href ="url">NAME</a> / .... to add links to ur website
+
+------ listing -------
+
+17 - <ol></ol> / ----- orgnize list with numbers
+ 
+18 - <ul></ul> / ---- orgnize list with dots
+
+19 - <li></li> / ----- list item
+
+   NOTE : you can use in this list any tag such as:
+        EX : 
+        
+        <ol>
+         <li><a href ="url">ex1</a></li>
+         <li><em>ex2</em></li>
+         </li>
+        </ol>
+     
+
+------Forms Part ONE--------
+
+       NOTE -1- : forms is an Input-elements so the user can interact with the wedsite
+
+20 - <form></form>
+           <input type="">
+       NOTE -2- : there are three typs of forms
+            A - text
+            B - radio
+            C - checkbox
+
+       NOTE -3- : form elements (A,C,and B) will be displayed in the same line until we use <br>
+
+
+21 - <br><br> / ----- its used to BRAKE lines (get the text into a lower-line)
+
+      NOTE : in form we use just the openning TAG "<br>" dont use the closeing TAG "</br>"
+
+22 - <label></label> : its used to name your "form-elements" for example
+     
+      <form>
+
+        <label>Email:</label>
+
+        <input type="text">
+ 
+        <label>Select:</label>
+         
+        <input type="radio">
+
+        <label>Check:</label>
+        
+        <input type="checkbox">
+
+      </form>
+
+
+      SIDE-NOTE : for more information about forms please visit "forms.html"
+
+
+-------navigating && IDs-------
+
+23 - <nav></nav> / ------- its used to navigate through your website
+
+     NOTE : for more information about forms please visit "navigating.html"
+
+24 - id= / --------- its used to give an element a name for Example :
+
+                  <a href="#something">ssomthing</a>
+                  <!--SOME YAP-->
+                  <h2 id="something">SHSH</h2>
+                     
+                 SIDE-NOTE : this Example with navigating
+
+------------Forms part TWO && IDs----------
+
+25 - id= (with forms"NAMING") / ------- For Example :
+
+        <form>
+
+          <input type="text" id="som1">
+
+          <label>for="som1">
+          Email
+          </label>
+
+          <input type="radio" id="som2">
+
+           <label>for="som2"
+           Press
+           </label>
+           
+
+         </form>
+   
+          SIMPLE-NOTE : the codes Above will appear in the same line so do not forget <br> TAG
+
+
+
+26 - submiting forms / ----- its used to submit forms to the server  for Example
+
+           <form>
+
+           <input type="text" id="em">
+
+           <label>for="em"
+           Email
+           </label>
+
+           <input type="text" id="pw">
+
+           <label>for="pw"
+           Password
+           </label>
+           
+           <input type="submit">
+
+           </form>
+
+            NOTE : you could use "name" to name you element inside the input TAG for Example
+
+             <input type="checkbox" name=Agree?"">
+
+            NOTE : if there 2 inputs or more and you want the user to choose one 
+            use the name attribute with same name in the inputs but you must use a seprate 
+            label tag for Example
+
+                   <p>Choose what you want</p>
+               
+                   <input type="radio" name=op>               
+                   
+                   <label>option1</label>
+
+                   <input type="radio" name="op"
+
+                   <label>option2</label>
+
+           
+            IMPORTANT-NOTE : only form elements with a name attribute will have their 
+            values passed to the database when submitting a form. So better using input tag
+            with name
+
+           NOTE -3- : you could use "value" So the database ""server"" can read the user input 
+           you must use a seprate label TAG
+                   
+                      <input type="radio" id="r1" name="pay" value="cash">
+                   
+                      <label for="r1">cash</label>        
+ 
+                  EXPLAIN : value="cash" So the server can read the input , 
+                             <label for="r1">cash</label> for the user , r1 is the id
+
+
+         NOTE -4- : for the case of text inputs, you can use the value attribute to define a
+         default value that will be submitted unless a different value is provided by the
+         user For Example 
+
+                     <label>Email:</label>
+                    
+                     <input type="text" id="t1" name="email"value="example@domain.com"> 
+
+-----------Drop-Down menus-----------
+
+
+27 - <select></select> / ------ its the menu itself
+
+28 - <option></option> / the options in drop-down menu
+
+       NOTE : you can use the select "drop-down menu" in forms to make an input for the user
+              for Example 
+
+                         <form>
+
+                              <select name="sm">
+                              <option>sm1</option>
+                              <option>sm2</option>
+
+                            </select>
+
+                              <input type="submit">
+
+                          </form>
+
+
+
+       NOTE -2- : you must use "name" attribute to send to the ""server"" for Example
+
+                          <form>
+
+                            <select name="op">
+                              <option>op1</option>
+                              <option>op2</option>                        
+
+                            </select>
+
+                          </form>
+
+
+
+      NOTE -3- : you can use IDs for Example
+
+                 <select id="co">
+                
+                  <label for="co">
+                  color
+                  </label>
+                    <option>Red</option>
+                    <option>Green</option>
+                    <option>Blue</option>
+                   
+                 </select>  
+
+      NOTE -4- : you can use the value attribute For Example
+
+                   <select id="co">
+                  
+                  <label for"co">
+                  color
+                  </label>
+                    <option value="r">Red</option>
+                    <option value+"g">Green</option>
+                    <option value="b">Blue</option>
+
+                 </select>
+
+
+      NOTE -5- : you can put in drop-down menu a pre-selected option using selected attribute 
+      for Example
+
+                  <label for"fo">
+                  Whats your fav Food?
+                  </label>
+                      <select id="fo">
+                    <option value="P">Pizza</option>
+                    <option value="B">Burger</option>
+                    <option value="r" selected>Rice</option>
+
+                        </select>
+
+
+
+
+----------Video----------
+
+
+29 - <video><video> / ----- to add video(s) to your Website
+
+                    NOTE : Its like the img tag For Example
+
+                          <video>
+                           <source src="vid source"
+                           type="vid_extantion">   
+                          </video>
+
+                    NOTE -2- : you must use type attribute to define the video extantion
+                    such as ( MP4 , webm , MKV , etc.... )
+
+                    IMPORTANT-NOTE : different media formats are needed for compatibility
+                    with different browsers and devices. the <source> tag allows you 
+                    to add multiple files. for Example
+
+                     <video>
+                           <source src="vid source.mp4"
+                           type="video/mp4">
+                             <source src="vid source.webm"
+                           type="video/webm">
+
+                     </video>
+ 
+
+                   NOTE -3- : you can add text if the video wont load on browser the text
+                   will appear for Example
+
+                     <video>
+                           <source src="vid source.mp4"
+                           type="video/mp4">
+                             <source src="vid source.webm"
+                           type="video/webm">
+                           Video not supported
+
+                     </video>
+ 
+                  NOTE -4- : You can add "video controls" ( Play/pause , Volume , etc ..)
+                  for Example
+         
+                     <video controls>
+                           <source src="vid source.mp4"
+                           type="video/mp4">
+                             <source src="vid source.webm"
+                           type="video/webm">
+
+                     </video>
+
+
+
+                
+-----------Audio-----------
+
+
+30 - <audio></audio> / ------ To add any audio to your website
+
+                     NOTE : you can use it like video TAG for Example
+                        
+                     <audio>
+                           <source src="audio source.mp3"
+                           type="audio/mpeg">
+                             
+                     </audio>
+
+                       
+                   NOTE -2- : "mpeg" belong to mp3 format
+
+                   NOTE -3- : you can add multiple audio like the video TAG because
+                   it use the source TAG
+
+                   NOTE -4- : like video you must use type attribute to define the 
+                   audio Extension suchb as ( mp3 , ogg , wav , etc .... )
+
+                   NOTE -5- :  you can add text if the audio wont load on browser the text
+                   will appear for Example
+
+                     <audio>
+                           <source src="au source.mp3"
+                           type="audio/mpeg">
+                             <source src="au source.ogg"
+                           type="audio/ogg">
+                           Audio type not supported
+                     </audio>
+
+                   
+                  NOTE -6- : you can add "audio controls" ( Play/pause , Volume , etc ..)
+                  for Example
+                
+                      <audio controls>
+                           <source src="au source.mp3"
+                           type="audio/mpeg">
+                             <source src="au source.ogg"
+                           type="audio/ogg">
+                           Audio type not supported
+                     </audio>
+
+ 
+                NOTE -7- : you can use attribute like ( loop , autoplay , muted )
+
+                NOTE -8- : "loop" to replay the audio when the audio ends
+ 
+                           "autoplay"to play the audio when the page load
+
+                           "muted" to play the audio whrn the page load but
+                           play in mute
+
+               Example :
+
+                    <audio autoplay>
+                           <source src="au source.mp3"
+                           type="audio/mpeg">
+                             <source src="au source.ogg"
+                           type="audio/ogg">
+                           Audio type not supported
+                    </audio>
+
+                NOTE -9- : you can use more than one attribute for Exmple
+
+
+                    <audio autoplay muted>
+                           <source src="au source.mp3"
+                           type="audio/mpeg">
+                             <source src="au source.ogg"
+                           type="audio/ogg">
+                           Audio type not supported
+                    </audio>
+             
+                Explain : the audio will play when the page loads but with no sound
+
+
+                NOTE -10- : you can use these attributes with audio && video
+
+
+----------Page Layout---------
+
+31 - <header></header> / ------ include the "head" of your website for Example
+
+                       <header>
+                         <h1>WELCOME TO THIS WEBSITE</h1>
+                       </header>
+
+
+
+32 - <main></main> / ---- include the "body" of your website for Example
+
+                         <main>
+                           <p>Do you love me?</p> 
+                             <input type="checkbox" name="an" id="an">   
+                         </main>
+
+33 - <footer></footer> / ----- include the end of you website for Example
+
+                                <footer>
+                                  <h2>copyright(2026)</h2>
+                                </footer>
+
+
+----------Style----------
+
+34 - style attribute / ------ this attribute used to define thing like (color,font size
+                              and alignment) For Example
+
+                          <h1 style="color:red">Whats wrong with You!</h1>
+
+                      NOTE : you can use more than one thing at the same time
+                      just use ";" for Example
+
+
+                            <h1 style="color:red;text-align:center">
+                            Whats wrong with You!
+                            </h1> 
+                             
+
+                      Explain : "color:green" for font color
+                                "font-size" for font size
+                                "text-align" to move text and align it
+
+                      NOTE -2- : you can use the style attribute for buttons for Example
+
+                               <button style="background-color:blue">
+                               OK
+                               </button>
+
+                      NOTE -3- : you can also use more than one thing at the same time
+                      for Example
+
+
+                               <button style="background-color:blue;font-size=large">
+                               OK
+                               </button>
+                               
+
+                     ALSO : you can do
+                        
+
+                    <button style="background-color:blue;font-size=large;color:red">
+                    OK
+                    </button>
+
+
+----------Inline && Block elements--------
+
+\\Block elements//  ---- the TAGS that take a whole line for itself For Exmple 
+                     
+                        <h1>So?</h1>
+                        <p>What?</p>
+
+                  NOTE : these TAGS take a whole line More of these TAGS :
+
+                         A - <h1-6></h1-6>
+                         B - <p></p>
+                         C - Page layout TAGS 
+
+
+\\Inline elements// ---- TAGS that Stays at the same line for Example :
+
+                        <p>WHAT <b>THE</b> <i>HELL</p>
+
+                        NOTE : this will display in the same line more these TAGS
+                     
+                              A - <a></a> 
+                              B - <b></b>
+                              C - <i></i>
+                              D - <u></u>
+                              E - <strong></strong>
+                              F - <em></em>
+                              G - <img>
+                              H - <label>
+
+
+
+
+-------Divine && Conquer-------
+
+
+35 - <div></div> / ----- Its used to make blocks so its Easy to Customizing TAGS   
+                         for Example
+                        
+                         <div style="text-align=center">
+                         <h1>WELCOME</h1>
+                         <img src="Welcome.png">
+                         <p>THANK YOU</p>
+                         </div>
+
+                  NOTE : The elements inside <div> will take the effects of the 
+                  attributes means that the element in Example Above will be centered
+                  But if You use an attribute inside some TAGS in div it will take
+                  effects of the Used attribute inside them for Example
+
+                         <div style="text-align=center">
+                         <h1>WELCOME</h1>
+                         <img src="Welcome.png">
+                         <p style="color:red">THANK YOU</p>
+                         </div>
+  
+                EXPLAIN : the <p> Above will take its own attribute And will be RED
+
+
+------Tables-------
+
+36 - <table></table> / ---- the its table itself
+
+37 - <tr></tr> / ------ "table Rows" its the rows of the the table
+
+38 -  <td></td> / ----- "Table Data" Its the data of the table For Example
+
+                     <table>
+                       <tr> 
+                        <td>Something01</td>
+                        <td>something02</td>
+                       </tr>
+                       <tr> 
+                         <td>something03</td>
+                         <td>something04</td>
+                       </tr>
+                     </table>
+                    
+                    NOTE : you add border to the table and the table data for Example
+                         
+                     <table style="border:solid">
+                       <tr> 
+                        <td style="border:solid">Something01</td>
+                        <td>something02</td>
+                       </tr>
+                       <tr> 
+                         <td>something03</td>
+                         <td>something04</td>
+                       </tr>
+                     </table>
+
+
+39 - <th></th> / ------ "Table Heading" the title of the table for Example
+ 
+                         <table>
+                           <th>Name</th><th>Age</th>
+                            <tr>
+                              <td>Joseph</td><td>16</th>
+                            </tr>
+                            <tr>
+                              <td>Mahmood</td><td>17</td>
+                         </table>
+ 
+
+---------THE FINAL ATTRIBUTE IN THIS HTML NOTES-------
+
+40 - colspan , Rowspan attribute / ------ you can make cells that take up 
+     multiple rows and/or columns, using the attributes colspan and/or
+     columns, using the attributes colspan and rowspan. this is called
+     merging cells
+
+     A - colspan / ---- colspan is for the number of columns a cell should 
+         span
+     
+     NOTE : you could understand it like this its extend like this "-------"
+     i mean horizontal
+
+     Example :  
+
+                           <table>
+                           <th>Name</th><th>Age</th>
+                            <tr>
+                              <td>Joseph</td><td>16</th>
+                            </tr>
+                            <tr>
+                              <td>Mahmood</td><td>17</td>
+                            <tr>
+                             <td colspan="2">Rana-18</td>
+                           </table>
+
+     B - rowspan / ----- the rowspan attribute specifies the number of rows
+         a cell should span
+          
+         NOTE -2- : you can uderstand it like this "|
+                                                    |
+                                                    |
+                                                     " i mean vertically
+                                                       for Example             
+
+
+                       <table>
+                         <th>Year</th>
+                         <th>Month</th>
+                         <th>Day</th> 
+                          <tr>
+                            <td>2026</td>
+                            <td>June</td>
+                            <td rowspan="2">23</td>
+                          </tr>
+                       </table>
+
+
+---------Introduction to JavaScript--------
+
+A1 - onclick attribute //------- used to trigger an action when HTML element
+                                 is clicked or tapped for Example
+
+                           <button onclick=action>Ok</button>
+
+
+B2 - alert attribute //----- you can trigger to display a message For Example
+ 
+                             <button onclick=alert"('What do you want?')">
+                             do not click
+                             </button>
+
+                NOTE : you can make other html elements interactive
+                      for Example
+ 
+                       <img src="img.jpg" onclick=alert"('HUH?')">
+
+
+
+-----------THE END---------
+
+May Allah Forgive Us and Thank Allah That I completed the Basics OF HTML :)
+I'm sorry if there is Any mistakes on code info Or Explaintion XD
+
+------INFO-----
+ 
+**This File Was Created by Mahmood (Joseph)**
+**Created On 15/6/2026**
+**Finished On 23/6/2026**
+**Src="SoloLearn"**
+**Introduction to HTML**
+**Thanks For Reading My File :)**
+**Bye Bye :)**
