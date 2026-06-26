@@ -1,5 +1,5 @@
 1 - <style>
-   p{
+   p {
     color:red;  / ---- gives Every <p> a Red color
   }
 </style>
@@ -8,17 +8,93 @@
 
         
       <style>
-      p,h1{
-       color:red;  / ---- gives Every <p> a Red color
+      p,h1 {
+       color:red; 
    }
       </style>
-  NOTE -2- : You can Use ut in head Tag    
+  NOTE -2- : You can Use it in head Tag    
 
    <head>
      <style>
-     p{
-      color:red;  / ---- gives Every <p> a Red color
+     p {
+      color:red;  
      }
       </style>
     </head>  
 
+ NOTE -3- : you can use more than one Decoration for Example
+
+<style>
+   p {
+    color:red;  
+    text-align:center;
+    }
+</style>
+
+1A -  font-family / ----- to define or change the font of the text For Example
+
+  <style>
+   p {
+    color:red;  
+    font-family:sans-serif;
+    }
+</style>
+
+  NOTE -4- : Most famous Fonts are :
+            
+               A - sans-serif
+               B - Arial
+               C - Roboto
+               D - Helvetica
+               E - serif
+               F - Times New Roman
+               G - Georgia
+               H - monospace
+               I - Courier New
+               J - Consolas
+
+
+  NOTE -5- : if the font name has spaces use "" for Example
+
+<style>
+   p {
+    color:red;  
+    font-family:"The New Roman"
+    }
+</style>
+
+  NOTE -6- :  the style tag will applies to the tags are nested inside the main tag for Example
+
+                                 
+<style>
+   p { 
+    color:red;  
+    text-align:center;
+    }
+</style>
+
+<p>How Are <i>You</i> ?</p>
+
+EXPLAIN : So the You in "<i>You</i>" will be colored Red ,wil be Centered And wil italic
+
+ NOTE -7- : if you want the nested tag to be diffrent from the main tag For Example 
+
+
+    <style>
+   p {
+    color:red;  
+    text-align:center
+    }
+</style>
+
+<style>
+   i {
+    color:blue;  
+    text-align:center
+    }
+</style>
+
+<p>How Are <i>You</i> ?</p>
+
+
+ 
