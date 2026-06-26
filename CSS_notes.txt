@@ -1,0 +1,24 @@
+1 - <style>
+   p{
+    color:red;  / ---- gives Every <p> a Red color
+  }
+</style>
+
+  NOTE : you use more than one selectors for Example
+
+        
+      <style>
+      p,h1{
+       color:red;  / ---- gives Every <p> a Red color
+   }
+      </style>
+  NOTE -2- : You can Use ut in head Tag    
+
+   <head>
+     <style>
+     p{
+      color:red;  / ---- gives Every <p> a Red color
+     }
+      </style>
+    </head>  
+
