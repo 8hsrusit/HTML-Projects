@@ -1,3 +1,5 @@
+-------style Tag-------
+
 1 - <style>
    p {
     color:red;  / ---- gives Every <p> a Red color
@@ -10,7 +12,7 @@
       <style>
       p,h1 {
        color:red; 
-   }
+      }
       </style>
   NOTE -2- : You can Use it in head Tag    
 
@@ -76,8 +78,8 @@
 <p>How Are <i>You</i> ?</p>
 
 EXPLAIN : So the You in "<i>You</i>" will be colored Red ,wil be Centered And wil italic
-
- NOTE -7- : if you want the nested tag to be diffrent from the main tag For Example 
+ 
+  NOTE -7- : if you want the nested tag to be diffrent from the main tag For Example 
 
 
     <style>
@@ -96,5 +98,27 @@ EXPLAIN : So the You in "<i>You</i>" will be colored Red ,wil be Centered And wi
 
 <p>How Are <i>You</i> ?</p>
 
-
+EXPLAIN : So the You in "<i>You</i>" will be colored blue ,it will be Centered and will be italic
  
+ NOTE -8- :  You can Tell CSS that Choose B if its inside A For Example
+
+   <style>
+   h1 i {
+    color:blue;  
+    text-align:center
+    }
+</style>
+
+EXPLAIN : Every <i></i> inside <h1>/<h1> will applies the properties For Example
+
+
+
+<h1>Hi How Are <i>You</i></h1>
+
+EXPLAIN -2- :  <i>You</i> will be Centered and colored blue but the <h1></h1> it self will not apply to properties\
+
+<h1>I Love</h1>
+
+<i>You</i>
+
+EXPLAIN -3- : <i>You</i> will not be applied to properties
