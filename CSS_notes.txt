@@ -1,6 +1,8 @@
 -------style Tag-------
 
-1 - <style>
+1 - <style></style> / ---- to style your elements 
+
+<style>
    p {
     color:red;  / ---- gives Every <p> a Red color
   }
