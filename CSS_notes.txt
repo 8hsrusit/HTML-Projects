@@ -1,10 +1,10 @@
 -------style Tag-------
 
-1 - <style></style> / ---- to style your elements 
+1 - <style></style> / ==> to style your elements 
 
 <style>
    p {
-    color:red;  / ---- gives Every <p> a Red color
+    color:red;  / ==> gives Every <p> a Red color
   }
 </style>
 
@@ -35,7 +35,7 @@
     }
 </style>
 
-1A -  font-family / ----- to define or change the font of the text For Example
+1A -  font-family => to define or change the font of the text For Example
 
   <style>
    p {
