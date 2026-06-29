@@ -123,4 +123,231 @@ EXPLAIN -2- :  <i>You</i> will be Centered and colored blue but the <h1></h1> it
 
 <i>You</i>
 
-EXPLAIN -3- : <i>You</i> will not be applied to properties
+EXPLAIN -3- : <i>You</i> will not be applied to properties Because it not inside <h1></h1>
+
+
+-------ID && CLASS-------
+
+2 - IDs ==> to give an element a unique define on your page for Example
+
+  <p id="intro"> 
+  Some Yap
+  </p>
+
+  EXPLAIN : <p> has its own id and i cant give the smae id to another element
+
+  NOTE -2- : you can target a specific element with there id using the "#" for Example
+
+  #intro {
+    color:red;
+  }
+
+  EXPLAIN -2- : now the <p> will be colored red Because i targeted with the "#"  
+
+  More Examples :
+
+      <style>
+       #heading {
+        background-color:blue;
+        text-align:center;
+        color:white
+       }
+       #movie {
+        color:white;
+        background-color:red;
+        text-align;center
+       }
+      </style>
+
+       <body>
+       <h1 id="heading"> THE BEST MOVIE</h1>
+       <p id="movie">Matrix</p>
+       <p id="ganre"> SI-FI </p> 
+       </body>
+
+3 - Classes ==> it used to define -identify- multipule elements for Example
+   
+  <p class="movie">Metrix</p>
+  <button class="movie">Watch Now!</button>
+
+  EXPLAIN -3- : both of <p> <button> has the same class or "group" so it will applies the
+                properties at the same Time 
+
+  NOTE -3- : you can target class elements with "." for Example
+
+   .movie {
+     text-align:center;
+     Font-family:arial,monospace;
+     background-color:blue
+     text-color:white
+   }
+
+   NOTE -4- : you can target a class with a diffrent element so the properties of these elements 
+              will applied for Example  
+      <style>
+        p.w {  
+         color:blue;
+         font-family:arial;
+        }
+      </style>
+
+        <body>
+          <h2 class="w">Wellcome</h2>
+          <h2 class="w">How was You Day?</h2>
+          <p class="w">Thank you<p>
+          <p class="w">fine,snd you?</p>
+        </body>  
+
+    EXPLAIN -4- : now only the <p> will be applied to these properties (color and font-family)
+     
+    NOTE -5- : an element can be targeted in diffrent ways For example an element can have
+               both id and class for example
+
+               <p id="som" class"sam">HUH?</p>
+
+
+
+--------Priorities-------
+
+EXPLAIN : CSS Has Some Rules and Priorities for appling properties the Priorities are
+
+            1A - the most ==> Inline elements 
+            2B -  2nd most ==> IDs
+            3C - 3rd most ==> class
+            4D - the least ==> element
+
+        NOTE : this Priorities will apply if the same element Has multiple properties 
+                For Example
+              
+            <style>
+            p {
+              color:red;
+            }
+
+            #int {
+              color:green;
+            }
+
+            .intro {
+              color:blue;
+            }
+            </style>
+
+              <body>
+               <p id="int" class="intro">YAP</p>
+              </body>
+
+        EXPLAIN : the <p> will apply green color Because the Priorities for IDs is the Most
+
+        Q : What is the Inline Elements?
+        
+        A : the element that has his own attribute and it have the Higher Priorities on CSS
+            For Example
+
+               <p style="color:violet">YAP2</p>
+
+        EXPLAIN -2- : this TAG has its own attribute "style" so CSS will ignore Any IDs,class and
+                      Element properties in <Style> and will apply the element attribute "style"
+                      Because it have the higher Priorities 
+
+                
+-------Comments------
+
+4 - /*YAP*/ ==> Comments in CSS 
+ 
+            NOTE : you cant use HTML Comments in CSS whether in Internal CSS or External CSS
+
+------Internal && External && Inline CSS------
+
+A1 - Inline CSS ==> inside the same line in HTML For Example
+
+                  <button style="color:white;background-color:blue">
+                  OK
+                  </button>
+
+B2 - Internal CSS ==> inside the HTML file For Example
+
+                     <html>
+                      <head>
+                       <style>
+                       .int {
+                        color:pink;
+                       }
+                      #but {
+                        background-color:green:color:black;
+                      }
+                       </style>
+                      </head>
+
+                        <body>
+                          <h3 class="int">HI!</h3>
+                          <button id="but">PRESS ME!</button>
+                     </html>  
+
+C3 - External CSS : its an seprate CSS file attached to a HTML file 
+
+          NOTE : You must use "<link rel="stylesheet" href="path to CSS file">" to link a seprate
+                 CSS file
+
+                 Explain : "rel" means "What is this file?" "href" means "Where is this file?"
+
+          NOTE -2- : There is no <body>,<html>,<head>,etc... in CSS file only the CSS codes
+
+          Note -3- : there is No <style> TAG Means start directly in CSS codes
+
+          SIMPLE-NOTE : Do Not forget if you want to Comment use /*YAP*/ Do not use <!--YAP--> 
+
+
+-------color-------
+
+NOTE : Every color comes from Red,Green and Blue (RGB)
+
+5 - RGB codes ==> Every color has a bunch of numbers (0,0,0) 
+                                                      R,G,B we use it in CSS like this
+
+                                        p {
+                                          color:rgb(127,255,212)
+
+                                        }             
+
+        
+      NOTE : (0,0,0) means Black and (255,255,255) means White 
+
+
+6 - HEX Codes ==> Every color has a bunch of number amd letters #ff0000
+                                                                    R G B
+
+                                                                  
+          NOTE -2- : its a shorthand to the RGB(0,0,0)
+
+A1 - HEX counting system ==> 
+
+  NOTE -3- : Every letter represent a number
+
+  NOTE -4- : its start from ZERO
+
+       COUNTING SYSTEM : 
+                         
+                        0
+                        1
+                        2
+                        3
+                        4
+                        5
+                        6
+                        7
+                        8
+                        9
+                        A => 10
+                        B => 11
+                        C => 12
+                        D => 13
+                        E => 14
+                        F => 15
+
+
+   NOTE -5- : WE use it in CSS like this
+
+                          p {
+                            color:#FF00FF
+                          }
