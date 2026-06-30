@@ -351,3 +351,75 @@ A1 - HEX counting system ==>
                           p {
                             color:#FF00FF
                           }
+
+
+--------Dimensions--------
+
+7 - width ==> tou can control the width of any element In HTML With CSS For Example
+
+         
+               <style>
+               .ok {
+                width:100px;
+               }
+               </style>
+
+                 <body>
+                <button class="ok">
+                Press ME!
+                </buttton>
+
+8 - font-size ==> its the Size of the Text Itself Not the Element Itself For Example
+
+                  <style>
+                  #m {
+                    font-size:30px;
+                  }
+                  </style>
+
+                  <body>
+                  <p id="m">
+                  HI!
+                  </p>
+
+
+    NOTE : in most Web-Browsers the defualt size of text in <p> , <ol> , <ul> , <button> , <table>
+           is 16px
+
+    NOTE -2- : you can use values like small , medium and large 
+
+                           A1 ==> small --> 13px
+                           B2 ==> mediim --> 16px
+                           C2 ==> large --> 18px
+
+  
+9 - percentages (%) ==> to ensure the design of your page looks great on diffrent screen
+
+      NOTE : it will take its size from the parent element size such as <body>
+
+      NOTE -2- : if there is a code like this
+
+                <body>
+                  <div>
+                   <p>yap</p>
+                  </div>
+                </body>
+
+          The body will be the parent of div and p will be a child from div
+
+      NOTE -3- : by defualt the <body> matches the width of the screen 
+
+          <body id="parent"> 
+            <div id="child">
+             <p>YAP</p>
+            </div>
+          </body>  
+            /*CSS*/   
+          #parent {
+            width:300px;
+           }
+          #child {
+            width:50%;
+          }
+
+      EXPLAIN : the child will be 150px Because the parent has 300px
