@@ -35,7 +35,7 @@
     }
 </style>
 
-1A -  font-family => to define or change the font of the text For Example
+A1 -  font-family => to define or change the font of the text For Example
 
   <style>
    p {
@@ -56,7 +56,15 @@
                H - monospace
                I - Courier New
                J - Consolas
+               K - cursive
+               L - fantasy
 
+    BACK-UP NOTE : not all users have the same font you have selected so select more than one font
+
+      <style>
+        .mo {
+          font-family: cursive, monospace
+        } 
 
   NOTE -5- : if the font name has spaces use "" for Example
 
@@ -124,6 +132,13 @@ EXPLAIN -2- :  <i>You</i> will be Centered and colored blue but the <h1></h1> it
 <i>You</i>
 
 EXPLAIN -3- : <i>You</i> will not be applied to properties Because it not inside <h1></h1>
+
+
+B2 - font-weight ==> it use to control bold text for Example
+
+   .ol {
+    font-weight:500;
+   }
 
 
 -------ID && CLASS-------
@@ -422,4 +437,117 @@ A1 - HEX counting system ==>
             width:50%;
           }
 
-      EXPLAIN : the child will be 150px Because the parent has 300px
+      EXPLAIN : the child will be 150px Because the parent has 300px\
+
+
+-------Styling Text--------
+
+10 - text-align ==> to align your text (center,right and left) for Example
+
+                   <body>
+                     <p id="par">
+                      So,Thats ME!
+                     </p>
+                   </body>
+ 
+                    <style>
+                     #par {
+                      text-align:center;
+                     }
+
+          A1 => text-align:justify ==> used to align text from both left and right by adjusting
+                                       the spaces between words ensuring equal width
+
+11 - text-Decoration ==> to add Decoration for your text soe of these Decoration are :
+
+                            A1 => underline ==> to add line under your text
+                            B2 => overline ==> to add a line upper your text
+                            C3 => line-through => fo add a line through your Text
+                            D4 => none ==> to remove any Decoration like <a href="url">yap</a>
+
+                Examples :
+
+                 <p id="of">
+                 Limited Time Offer!
+                 <b> Try our New </b>
+                 </p>
+
+                 <!-- I want to target <b> --> 
+                 
+                 /*CSS*/
+
+                 #of b {
+                  text-decoration:underline;
+                 }          
+
+          EXPLAIN : we're telling CSS to go to the element with id of "of" which is <p> -parent-
+                    and apply these properties in <b> -child- 
+
+          NOTE : some CSS properties can hav multiple values you can control the color for the
+                 decoration by adding a color , RGB or HEX for Example 
+
+                 #of b {
+                  text-decoration:overline #50003c;
+                 }
+
+          NOTE -2- : you can use styles on Decoration such as 
+                     
+                     A1 => dotted ==> make your decoration dotted
+                     B1 => double ==> make your decoration doubled
+                     C3 => dashed ==> make your decoration dashed
+                     D4 => wavy ==> make your decoration wavy
+
+          Examples :
+
+             #of b {
+              text-decoration:line-through #479260 wavy
+             }
+
+12 - text-transform ==> allows you to control the capitalization of the text content such as
+
+                            A1 => uppercase ==> to make your text full uppercase
+                            B2 => lowercase ==> to make your text full lowercase
+                            C3 => capitalize ==> make Every first letter in you text uppercase
+
+                  Examples :
+
+                       #of b {
+                        text-transform:capitalize
+                       }
+
+13 - text-shadow ==> its add a stylish thing to your text (:
+
+           NOTE : it has two values "vertical" and "horizontal" for Example
+
+                    #of b {
+                      text-shadow: 8px 6px
+                                    H   V               
+                    }
+
+          NOTE -2- : these values hav nagative and positive values such as
+
+               for horizontal ==> the right means positive "+" and left means nagative "-"
+               for vertical ==> the down means positive "+" and up means nagative "-"
+
+          NOTE -3- : there are two additional optional values 
+
+                   A1 => blur ==> to control the blur of the shadow
+                   B2 => color ==> to add a color of the shadow
+
+                   Examples :
+
+                   <p id ="Pl">
+                    Please
+                   </p>
+
+                   /*CSS*/
+                  #pl {
+                    text-shadow: 4px  8px  2px  #cc00ff41
+                                 H(R) V(D)  B        C
+                  } 
+
+          SPEACAL-NOTE : in this Example i add some spaces for Explain the true format is
+
+                #pl {
+                  text-shadow: 4px 8px 2px #cc00ff41
+                } 
