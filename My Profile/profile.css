@@ -1,0 +1,16 @@
+#bac {
+    background-color: darkslategrey;
+    font-family: Arial, sans-serif;
+}
+
+#profile {
+    text-align: center;
+    color: #ffffff;
+}
+
+.active-days {
+    color:#00CC00
+}
+ .inactive-days {
+    color:#CCCCCC
+ }
