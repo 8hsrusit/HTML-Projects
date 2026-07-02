@@ -551,3 +551,64 @@ A1 - HEX counting system ==>
                 #pl {
                   text-shadow: 4px 8px 2px #cc00ff41
                 } 
+
+------Styling Links------
+
+NOTE : the defualt Style for the link is underlined and blue colored
+
+NOTE -2- : you can edit the defualt style with CSS using colors font and decoration For Example
+
+                   <a href="url.com">This is Our feature</a>
+                   /*CSS*/
+
+                   a{
+                    font-family: Arial,monospace;
+                    text-size:18px;
+                    color:#FFFFFF;
+                    background-color:#0000FF
+                   } 
+
+1 - Pseudo selectors ==> its the state of an element when the user interact with it such as
+
+                      A1 => hover ==> when the user puts his mouse on the element
+                      B2 => link ==> define the unvisited link
+                      C3 => active ==> click on the link but haven't released the mouse yet
+                      D4 => visted ==> to mark visted Links
+                      E5 => focus ==> when an elemnt is ready to interact
+                      
+
+              Examples :
+
+                <a href="ShittyURL.com">Things</a>
+
+              /*CSS*/
+
+              a:hover {
+                color:#BA88FF
+              }
+
+              /*OR*/
+             a:active {
+                color:#BA88FF
+              }
+
+              /*OR*/
+
+                a:link {
+                color:#BA88FF
+              }
+
+              NOTE : Pseudo selectors can br used with any element even the <p> and <input> elements
+
+              NOTE -2- : by defualt the links are underlined but you can remove it wuth decoration properties
+
+               a {
+                text-decoration:none;
+               }
+
+              NOTE -3- : you can use any text decoration such as
+
+                a {
+                text-decoration:underline;
+               }
+                        
